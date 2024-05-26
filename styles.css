@@ -5,7 +5,7 @@
 html {
         scroll-behavior: smooth;
 }
-.centerit, .faq {
+.centerit, #faq {
     text-align:center;
 }
 body {
@@ -49,13 +49,13 @@ h3 {
         margin-bottom:8px;
         text-align:center;
 }
-.gallery {
+#gallery {
     display: flex;
     height:auto;
     max-width:100%;
     height:auto;
 }
-.gallery img {
+#gallery img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +64,7 @@ h3 {
     border-radius:10px;
 }
 @media only screen and (max-width: 768px) {
-    .gallery {
+    #gallery {
         flex-wrap: wrap;
         justify-content:center;
     }
@@ -91,12 +91,12 @@ button:active {
 button:hover {
    transform: scale(1.05);
 }
-.lite {
+#lite {
   margin-left: auto;
   margin-right:10vh;
   
 }
-.classic {
+#classic {
   margin-right: auto;
   margin-left:10vh;
 }
