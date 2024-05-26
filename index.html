@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahanov's Hills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script>
+        window.onload = function () {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                document.getElementById("compare").style.display = "none";
+                document.getElementById("mobile-message").style.display = "block";
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pahanov's Hills</h1>
+    </header>
+    <main>
+        <div class="mainHeader">
+            <h2>Пахану опять надо спасать мир, но вот только где его калаш? Помогите ему!</h2>
+        </div>
+        <h1 style="margin-top:100px; text-align:center;">Скачать</h1>
+        <div id="compare">
+            <div class="lite">
+                <button type="submit" onclick="window.open('builds/Pahanovs Hills Lite Installer.exe')">Lite</button>
+                <div>
+                    <ol>
+                        <li>Не лагает</li>
+                        <li>Рекоменудемый вариант</li>
+                        <li>Графика уровня картошки</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="classic">
+                <button type="submit" onclick="window.open('builds/Pahanovs Hills Lite Installer.exe')">Classic</button>
+                <div>
+                    <ol>
+                        <li class="rgb">ЛУЧИКИ</li>
+                        <li>DLSS</li>
+                        <li>Потянет только у Кости</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <p id="mobile-message" style="display:none;" class="centerit">Игра пока что только для Windows. Скачай с компьютера.</p>
+        <div id="faq">
+            <div>
+                <h3>Про что?</h3>
+                <p>Просто игра про Пахана. Пахан застрял на Марсе, а Землю захватывают марсиане. Ничего нового.</p>
+            </div>
+            <div>
+                <h3>На чём поиграть?</h3>
+                <p>Сейчас на Windows. Потом, может быть, на Android, Linux, MacOS и Яндекс Играх.</p>
+            </div>
+        </div>
+        <h3>Скриншоты</h3>
+        <div id="gallery" style="margin-bottom:80px">
+            <div>
+                <img src="home.jpg" height="50%" width="90%">
+                <p style="text-align:center;">дом Пахана</p>
+            </div>
+            <div>
+                <img src="mars.jpg" height="50%" width="90%">
+                <p style="text-align:center;">Марс при Пахане</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="font-size:medium">Специально для Пахановых Зорек.</p>
+        <a href="mailto:pahan@tivik.dev" style="text-decoration:underline" rel="nofollow">pahan@tivik.dev</a>
+    </footer>
+</body>
+</html>
