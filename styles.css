@@ -1,6 +1,5 @@
 @font-face {
         font-family: Ubuntu;
-        src: url(contents/fonts/Ubuntu-Regular.ttf);
 }
 html {
         scroll-behavior: smooth;
