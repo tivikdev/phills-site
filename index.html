@@ -8,20 +8,12 @@
 	<meta name="referrer" content="strict-origin-when-cross-origin">
 	<title>Pahanov's Hills</title>
 	<meta name="description" content="Игра про лучшего обжшника в школе - Пахана. Найди калаш, отстреливай зомби, тяни верёвку, сбеги с Марса, спаси Землю! Phills доступна на Windows.">
-	<link rel="stylesheet" href="styles.css">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
+	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <script>
-        window.onload = function () {
-		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		if (isMobile) {
-			document.getElementById("compare").style.display = "none";
-			document.getElementById("mobile-message").style.display = "block";
-		}
-        };
-    </script>
 </head>
 <body>
 	<header>
@@ -31,30 +23,34 @@
 		<div class="centerit">
 		    <h2>Пахану опять надо спасать мир, но вот только где его калаш? Помогите ему!</h2>
 		</div>
-		<h2 style="margin-top:100px; text-align:center;">Скачать</h1>
+		<h2>Скачать</h1>
 		<div id="compare">
-		    <div id="lite">
-			<button type="submit" onclick="window.open('https://github.com/tivikdev/phills/releases/download/legacy/Pahanov.s.Hills.Lite.v1.0.2.zip')">Lite</button>
-			<div>
-			    <ol>
-				<li>Не лагает</li>
-				<li>Рекоменудемый вариант</li>
-				<li>Графика уровня картошки</li>
-			    </ol>
-			</div>
-		    </div>
-		    <div id="classic">
-			<button type="submit" onclick="window.open('https://github.com/tivikdev/phills/releases/download/legacy/Pahanov.s.Hills.v1.0.2.zip')">Classic</button>
-			<div>
-			    <ol>
-				<li>ЛУЧИКИ</li>
-				<li>DLSS</li>
-				<li>Потянет только у Кости</li>
-			    </ol>
-			</div>
+		    <div class="shit">
+			<div class="verticalGrid">
+				<a href="https://github.com/tivikdev/phills/releases/download/legacy/Pahanov.s.Hills.Lite.v1.0.2.zip" class="button">Lite</a>
+				<div>
+					<ol>
+						<li>Не лагает</li>
+						<li>Рекоменудемый вариант</li>
+						<li>Графика уровня картошки</li>
+					</ol>
+				</div>
 		    </div>
 		</div>
-		<p id="mobile-message" style="display:none;" class="centerit">Игра пока что только для Windows. Скачай с компьютера.</p>
+		<div class="shit">    
+		<div class="verticalGrid">
+				<a href="https://github.com/tivikdev/phills/releases/download/legacy/Pahanov.s.Hills.v1.0.2.zip" class="button">Classic</a>
+				<div>
+					<ol>
+						<li>лучиков пока нет</li>
+						<li>DLSS может быть работает</li>
+						<li>Вырвиглазно</li>
+					</ol>
+				</div>
+		    </div>
+		</div>
+	</div>
+		<p id="mobile-message" class="centerit">Игра пока что только для Windows. Скачай с компьютера.</p>
 		<div id="faq">
 		    <div>
 			<h3>Про что?</h3>
@@ -66,14 +62,14 @@
 		    </div>
 		</div>
 		<h3>Скриншоты</h3>
-		<div id="gallery" style="margin-bottom:80px">
+		<div id="gallery">
 		    <div>
 			<img src="contents/images/home.jpg" height="50%" width="90%" alt="Изображение полной картин комнаты главного героя Пахана из игры Pahanov's Hills(phills)">
-			<p style="text-align:center;">Дом Пахана</p>
+			<p class="centerit">Дом Пахана</p>
 		    </div>
 		    <div>
 			<img src="contents/images/mars.jpg" height="50%" width="90%" alt="Изображение туманной поверхности марса с фонарями из игры Pahanov's Hills(phills)">
-			<p style="text-align:center;">Марс при Пахане</p>
+			<p class="centerit">Марс при Пахане</p>
 		    </div>
 		</div>
 	</main>
@@ -81,5 +77,7 @@
 		<p style="font-size:medium">Специально для Пахановых Зорек.</p>
 		<a href="mailto:pahan@tivik.dev" style="text-decoration:underline" rel="nofollow">pahan@tivik.dev</a>
 	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
